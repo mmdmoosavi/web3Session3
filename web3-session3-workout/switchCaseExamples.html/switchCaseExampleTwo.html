@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch case ex two</title>
+</head>
+<body id = 111>
+    <noscript>This webpage does not support js</noscript>
+    <script>
+        //----- switch case ex two -----//
+        document.getElementById('111').style.background = '#000';
+        document.getElementById('111').innerText = 'switch case ex two !!!';
+        document.getElementById('111').style.color = '#fff';
+        var seasonNumber = Number(prompt('Enter season number : '));
+        switch(seasonNumber){
+            case 1 :
+                seasonNumber = 'Spring';
+                break;
+            case 2 :
+                seasonNumber = 'Summer';
+                break;
+            case 3 :
+                seasonNumber = 'Fall';
+                break;
+            case 4 : 
+                seasonNumber = 'Winter';
+                break;
+            default : 
+                seasonNumber = 'Error';
+        }
+        alert(seasonNumber);
+
+        //------------------------------//
+    </script>
+</body>
+</html>

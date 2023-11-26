@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch case ex one</title>
+</head>
+<body id = '111'>
+    <noscript>This webpage does not support js</noscript>
+    <script>
+        //---- switch case ex one -----//
+        var num = Number(prompt('Enter the day number : '));
+        switch(num){
+            case  1: 
+            var dayName = 'Saturday';
+                break;
+            case 2:
+                dayName = 'Sunday';
+                break;
+            case 3:
+                dayName = 'Monday';
+                break;
+            case 4:
+                dayName = 'Tuesday';
+                break;
+            case 5:
+                dayName = 'Thursday';
+                break;
+            case 6:
+                dayName = 'Wednesday';
+                break;
+            case 7:
+                dayName = 'Friday';
+                break;
+            default :
+                dayName = 'Undefined';
+        }
+        document.getElementById(111).style.background = '#000';
+        alert(dayName);
+        //-----------------------------//
+    </script>
+</body>
+</html>

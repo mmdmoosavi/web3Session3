@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset = 'UTF-8'>
+    <meta name = 'viewport' content ='width=device-width, initial-scale=1.0'>
+    <title>Home page</title>
+  </head>
+  <body>
+    <noscript>Your webpage does not support javascript</noscript>
+    <script>
+      //--- example one for [if] ---///
+      var num1 = Number(prompt('Enter number one : ')),
+      num2 = Number(prompt('Enter number two : ')),
+      txt = null ; 
+      sum = num1 + num2;
+      if((sum) > 10){
+        txt = `congratulaion ${num1} + ${num2} = ${sum}`;
+      }else if((sum) == 10){
+        txt = `${num1} + ${num2} = 10`;
+      }else{
+        txt = `Unfortunately ${num1} + ${num2} is ${sum} and lower than 10`;
+      }
+      alert(txt);
+      //----------------------------///
+    </script>
+  </body>
+</html>

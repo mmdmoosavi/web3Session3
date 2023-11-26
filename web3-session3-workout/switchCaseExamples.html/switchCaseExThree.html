@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switchCaseExThree</title>
+</head>
+<body id = 111>
+    <noscript>This webpage does not support js</noscript>
+    <script>
+        //----- switch case ex three -----//
+        document.getElementById('111').style.background = '#000';
+        document.getElementById('111').innerText = 'switch case ex three !!!';
+        document.getElementById('111').style.color = '#fff';
+        var color = prompt('Enter the color : (red , green , blue , purple)');
+        switch(color){
+            case 'red':
+                console.log('%cImportant !!!!', 'color : red;');
+                document.getElementById('111').innerText = 'Important !!!';
+                document.getElementById('111').style.color = 'red';
+                break;
+            case 'blue':
+                console.log('%cImportant !!!!', 'color : blue;');
+                document.getElementById('111').innerText = 'Important !!!';
+                document.getElementById('111').style.color = 'blue';
+                break;
+            case 'green':
+                console.log('%cImportant !!!!', 'color : greeen;');
+                document.getElementById('111').innerText = 'Important !!!';
+                document.getElementById('111').style.color = 'green';
+                break;
+            case 'purple':
+                console.log('%cImportant !!!!', 'color : purple;');
+                document.getElementById('111').innerText = 'Important !!!';
+                document.getElementById('111').style.color = 'purple';
+                break;
+            default:
+                console.log('Unvariable color !!!!!!!!!!!!!!!!!!!!!!!!!!!');
+        }
+
+        //------------------------------//
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switchCaseExFour</title>
+</head>
+<body id = 111>
+    <noscript>This webpage does not support js</noscript>
+    <script>
+        //----- switch case ex four -----//
+        document.getElementById('111').style.background = '#000';
+        document.getElementById('111').innerText = 'switch case ex three !!!';
+        document.getElementById('111').style.color = '#fff';
+        var num1 = Number(prompt('Enter number one : ')),
+        num2 =  Number(prompt('Enter number two : '));
+        var operator = prompt('Enter the operator : (+ , - , / , * , **)');
+        operator = operator.trim();
+        switch(operator){
+            case '+':
+                var Return = num1 + num2;
+                break;
+            case '-':
+                Return = num1 - num2;
+                break;
+            case '*':
+                Return = num1 * num2;
+                break;
+            case '/':
+                Return = num1 / num2;
+                break;
+            case '**':
+                Return = num1 ** num2;
+                break;
+            default:
+                Return = 'Error';
+        }
+        document.getElementById('111').innerText = `${num1} ${operator} ${num2} = ${Return}`;
+        
+        //------------------------------//
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if example three</title>
+</head>
+<body style = 'background-color:#000;'>
+    <noscript>Your webpage does not support js</noscript>
+    <script>
+        //--- if examples : number three ---///
+        var fSide = Number(prompt('Enter the first side of triangle : '));
+        var sSide = Number(prompt('Enter the second side of triangle : '));
+        var tSide = Number(prompt('Enter third side of triangle : '));
+        txt = null;
+        sumOneAndTwo = (fSide + sSide) ;
+        sumOneAndThree = (fSide + tSide) ; 
+        sumTwoAndThree = (sSide + tSide) ; 
+        if(fSide == sSide && fSide == tSide && sSide == tSide){
+            txt = 'These values makes a triangle';
+        }else if(((fSide + sSide) > tSide) && ((fSide + tSide) > sSide) && ((sSide + tSide) > fSide)){
+            txt = 'These values makes a triangle';
+        }else{
+            txt = '🏮These values doesnt makes a triangle !!!!!';
+        }
+        alert(txt);
+        //------------------------------------///
+    </script>
+    
+</body>
+</html>

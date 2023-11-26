@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If example number six</title>
+</head>
+<body style = 'background-color: #000;'>
+    <noscript>This webpage does not support js</noscript>
+    <script>
+        //--- if example number six ------///
+        var classMates = ['ali' , 'reza' , 'majid' , 'amir'];
+        var stdName = prompt('Enter your name please : ');
+        stdName = stdName.trim();
+        var txt = null;
+        for(var i = 0; classMates[i]; i++){
+            if(stdName == classMates[i]){
+                txt='You are registered in class😁😁😁';
+                break;
+                
+            }else{
+                txt='You are not registered in class😅😅';
+
+            }
+       
+        }
+        alert(txt);
+        //--------------------------------///
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if example number nine</title>
+</head>
+<body style = 'background-color : #000;'>
+    <noscript>This webpage does not support js</noscript>
+    
+    <script>
+        //----if example number nine -----///
+        while(true){
+            var pass = prompt('Enter your password : ');
+            if(pass.length >= 10){
+                txt = 'Your entered password is complicated enough\n';
+                break;
+            }else if(pass.length < 10 && pass.length >= 8){
+                txt = 'Your entered password is not complicated enough\nChoose another.';
+                alert(txt);
+            }else if(pass.length < 8){
+                txt = 'Your entered password is so simple\nChoose another.';
+                alert(txt);
+            }
+        }
+        alert(txt);
+        //--------------------------------///
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>conditional variable</title>
+  </head>
+  <body>
+    <noscript>This webpage in not support js</noscript>
+    <script>
+      //------- conditional variables examples ------////
+      // one //
+      var x = 12;
+      var isEven = x % 2 == 0 ? "Even number" : "Odd number";
+      console.log(isEven);
+      //-----//
+      // two //
+      var num = 22399999;
+      var largeNumber = num >= 1000 ? "Large number" : "small number";
+      console.log(largeNumber);
+      //-----//
+      // three //
+      var pass = "dhjfhld";
+      var isVariable =
+        pass != "admin" ? "Unvariable password" : "Varible password";
+      console.log(isVariable);
+      //-------//
+      // four //
+      var a = 3,
+        b = 4,
+        c = 5;
+      var is = a + b > c ? true : false;
+      var isTwo = a + c > b ? true : false;
+      var isThree = b + c > a ? true : false;
+      var isTriangle =
+        is && isTwo && isThree ? "its a triangel" : "its not a triangle";
+      console.log(isTriangle);
+      //------//
+      // five //
+      var str = "This is an apple tree.";
+      var isContain = str.search("apple") ? "Yes" : "No";
+      console.log(isContain);
+      //-------//
+      //---------------------------------------------////
+      document.getElementsByTagName("body")[0].style.background = "#000";
+      document.getElementsByTagName("body")[0].innerHTML =
+        "<p id = 111>Five examples of conditional variables !!!!</p>";
+      document.getElementById("111").style.color = "#fff";
+    </script>
+  </body>
+</html>

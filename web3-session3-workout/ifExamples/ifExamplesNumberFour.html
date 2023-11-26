@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if example number four</title>
+</head>
+<body style='background-color: #000'>
+    <noscript>This webpage does not support js</noscript>
+    <script>
+        //---if example number four ---///
+        var fSide = Number(prompt('Enter the first side of triangle : '));
+        var sSide = Number(prompt('Enter the second side of triangle : '));
+        var tSide = Number(prompt('Enter third side of triangle : '));
+        var txt = null;
+        sumOneAndTwo = (fSide + sSide) ;
+        sumOneAndThree = (fSide + tSide) ; 
+        sumTwoAndThree = (sSide + tSide) ; 
+        if(fSide == sSide && fSide == tSide && sSide == tSide){
+            var istriangle = true;
+            var ktriangle = 'Motasaviolazla';
+            txt = `${fSide} and ${sSide} and ${tSide} make a ${ktriangle} triangle`;
+        }else if(((fSide + sSide) > tSide) && ((fSide + tSide) > sSide) && ((sSide + tSide) > fSide)){
+            istriangle = true;
+            if(((fSide**2) + (sSide**2) == (tSide**2)) && istriangle == true){
+                ktriangle = 'Ghaemozavieh';
+                txt = `${fSide} and ${sSide} and ${tSide} make a ${ktriangle} triangle`;
+            }else if(((fSide**2) + (sSide**2) != (tSide**2)) && istriangle == true){
+                ktriangle = 'Mokhtalefolazla';
+                txt = `${fSide} and ${sSide} and ${tSide} make a ${ktriangle} triangle`;
+            }
+        }else{
+            istriangle = false;
+            txt = `${fSide} and ${sSide} and ${tSide} doesnt make a triangle!!!!!!!!!`;
+        }
+        alert(txt);
+        
+        
+        //-----------------------------///
+    </script>
+</body>
+</html>

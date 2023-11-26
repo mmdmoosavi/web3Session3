@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if example five</title>
+</head>
+<body style = 'background-color: #000;'>
+    <noscript>This webpage does not support js</noscript>
+    <script>
+        //--- if example number five --------///
+        pass = prompt('Enter Your password : ');
+        pass = pass.trim();
+        var txt = null;
+        if(pass.length >= 8 && pass.length <= 10){
+            var pattern = /[A-Z]/;
+            if(pattern.test(pass) == true)
+            {
+                txt = `Your password is ${pass} and its valid 🔥🔥🔥`;
+            }else{
+                txt = 'Enter a password containing atleast a capital letter !!!!';
+            }
+        }else{
+            txt = 'Your password must have a minimum of 8 characters and a maximum of 10 characters';
+        }
+        alert(txt);
+        
+        
+        //-----------------------------------///
+    </script>
+</body>
+</html>
