@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch Case Ex Six</title>
+  </head>
+  <body style="background-color: #000">
+    <noscript>This webpage does not support js</noscript>
+    <script>
+      //----- switch Case Ex Eight -----///
+        stdNames = ali = {height : 189, age :17 , average:15.5 } , 
+        hamid = {height : 180, age :17 , average:16.5 },
+        reza = {height : 178, age :18 , average:19 },
+        amir = {height : 182, age :19 , average:21 };
+        stdName = prompt('Enter student name :{hamid , reza , amir , ali} ');
+        stdName = stdName.trim();
+        switch(stdName){
+            case 'hamid':
+                console.log(hamid);
+                break;
+            case 'reza':
+                console.log(reza);
+                break;
+            case 'amir':
+                console.log(amir);
+                break;
+            case 'ali':
+                console.log(ali);
+                break;
+            default:
+                alert('Error');
+        }
+      //------------------------------///
+    </script>
+  </body>
+</html>
